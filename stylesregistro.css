@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Righteous&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body {
+  background-color: black;
+}
+
+img {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.registro-container {
+   background-color: #ff7e14;
+   max-width: 700px;
+   height: 700px;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid; 
+   place-items: center;
+   border-radius: 10px;
+   box-shadow: 0 0 20px 7px rgba(255, 142, 50, 0.55);
+   margin-bottom: 6rem;
+}
+
+
+.registro-grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 150px 150px 150px 150px;
+  max-width: 630px;
+  height: 600px;
+  /* margin-bottom: 6rem; */
+  align-items: center;
+}
+
+
+h1 {
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 40px;
+  padding-top: 1rem;
+}
+
+div {
+  padding: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+.email {
+ display: grid;
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+
+label {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+input {
+  height: 50px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.terminos {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 150px ;
+  margin-left: 0%;
+}
+
+.terminos input {
+  height: 20px;
+  max-width: 30px;
+}
+
+.terminos a {
+  color: black;
+}
+
+.terminos label {
+  padding-bottom: 0%;
+}
+
+.button-registro {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 60px;
+  width: 270px;
+  padding-left: 50px;
+  margin-bottom: 70px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFBB46;
+  border-radius: 30px;
+  border: none;
+  height: 45px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+} 
+
+/* QUERIES */
+
+@media (max-width: 992px) {
+
+  .registro-container{
+    max-width: 80%;
+    height: 1000px;
+    
+  }
+  
+  .registro-grid {
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px;
+  margin: 0%;
+  height: 850px;
+  /* background-color: violet; */
+  padding: 0%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  div {
+    padding: 0%;
+  }
+
+
+  .nombre,.apellido, .contraseña, .contraseña-dos, .terminos{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+ .terminos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  margin-bottom: 0%;
+ }
+
+ .button-registro {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 0%;
+  margin: 20px;
+
+
+ }
+
+
+
+
+
+}
