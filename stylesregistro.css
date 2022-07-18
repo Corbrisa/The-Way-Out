@@ -20,7 +20,6 @@ img {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
 }
 
 .registro-container {
@@ -43,7 +42,6 @@ img {
   grid-template-rows: 150px 150px 150px 150px;
   max-width: 630px;
   height: 600px;
-  /* margin-bottom: 6rem; */
   align-items: center;
 }
 
@@ -64,7 +62,7 @@ div {
  display: grid;
  grid-column-start: 1;
  grid-column-end: 3;
-}
+  }
 
 
 label {
@@ -133,57 +131,50 @@ button:hover {
 
 @media (max-width: 992px) {
 
-  .registro-container{
-    max-width: 80%;
-    height: 1000px;
+    .registro-container{
+      max-width: 80%;
+      height: 1000px;
+      
+    }
     
-  }
-  
-  .registro-grid {
-  grid-template-columns: 150px 150px;
-  grid-template-rows: 150px 150px 150px 150px;
-  margin: 0%;
-  height: 850px;
-  /* background-color: violet; */
-  padding: 0%;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  div {
+    .registro-grid {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    margin: 0%;
+    height: 850px;
     padding: 0%;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    div {
+      padding: 0%;
+    }
+
+
+    .nombre,.apellido, .contraseña, .contraseña-dos, .terminos{
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+  .terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 0%;
   }
 
-
-  .nombre,.apellido, .contraseña, .contraseña-dos, .terminos{
+  .button-registro {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 0%;
+    margin: 20px;
   }
-
- .terminos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 10px;
-  margin-bottom: 0%;
- }
-
- .button-registro {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  padding: 0%;
-  margin: 20px;
-
-
- }
-
-
-
-
 
 }
